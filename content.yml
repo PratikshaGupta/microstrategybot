@@ -1,0 +1,152 @@
+
+welcome: # this is the #welcome bloc referenced in index.js
+  - typing: true
+    text: # Picks one randomly
+      - Hey {{name}}! Welcome to Microstrategy Bot.
+      - Hello {{name}}! welcome to Microstrategy Bot.
+      - Greetings!! welcome to Microstrategy Bot.
+  - text: I can help you in getting insights, discovering data and finding reports for you. For eg. Can you tell me the minimum cost per region?
+    typing: 2s
+  - text: Let me know, which insight are you interested in?
+  #   typing: true
+  # - wait: 5s
+  # - text: You can say goodbye now.
+  #   typing: 1s
+
+  #   typing: true
+  # - wait: 2s
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     text: I can provide you insights, discover data and find reports for you.
+  #     buttons:
+  #       - <ask> New Query
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     text: I can provide you insights, discover data and find reports for you.
+  #     buttons:
+  #       - type: postback
+  #         title: New Query
+  #         value: <ask>
+
+askQuery:
+  - text: Which insight are you interested in?
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     text: I can provide you insights, discover data and find reports for you.
+  #     buttons:
+  #       - title: I don't have access at all
+  #         value: A   
+
+maxRevenue:
+  - typing: true  
+    text: 
+    - Discovering analytics ...
+    - Searching database ...
+  - typing: 2s
+    text: 
+    - From analytics, I got the maximum {{type}} is ${{revenue}}
+    - Here is the maximum {{type}} - {{revenue}}   
+    - Search Completed!! The maximum {{type}} is ${{revenue}}
+
+minRevenue:
+  - typing: true  
+    text: 
+    - Discovering analytics ...
+    - Searching database ...
+  - typing: 2s
+    text: 
+    - From analytics, I got the minimum {{type}} is ${{revenue}}
+    - Here is the minimum {{type}} - ${{revenue}}
+    - Search Completed!! The minimum {{type}} is ${{revenue}}    
+
+regionRevenue: 
+  - typing: true  
+    text: 
+    - Discovering analytics ...
+    - Searching database ...
+  - typing: 2s
+    text:
+    - From analytics, I got the {{type}} of {{region}} region is ${{value}} 
+    - Search Completed!! The {{type}} of {{region}} region is ${{value}}
+  # - text: 
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     images: 
+  #       - url: https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png
+  #     buttons:
+  #       - title: I don't have access at all
+  #         value: A        
+  #       - title: I get another error
+  #         value: B
+
+avgRevenue: 
+  - typing: true  
+    text: 
+    - Discovering analytics ...
+    - Searching database ...
+  - typing: 2s
+    text:
+    - From analytics, I got the average {{type}} is ${{revenue}} 
+    - Here is the minimum {{type}} - ${{revenue}}
+    - Search Completed!! The average {{type}} is ${{revenue}}
+
+compareRevenue:
+  - text: Here is your compared {{type}}
+
+compareRevenueAttachment:
+  - contentType: application/vnd.microsoft.card.hero
+    content:
+      title: ${{revenue}} - {{year}}
+
+findReport:
+  - text: Here are the first 10 reports
+  - contentType: application/vnd.microsoft.card.hero
+    content:  
+      title: Inventory Analysis
+      text: https://env-68274.trial.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=4058&src=mstrWeb.4058&_subscriptionID=3D672F5011E78527A8B70080EFB58C58&reportViewMode=1&Server=ENV-68274LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1
+      
+      # buttons:
+      #   - type: postback
+      #     title: Show Report
+      #     value: <A>
+          # url: "https://env-68274.trial.cloud.microstrategy.com/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=6BECEDC411E783FB0CC30080EFD5D994&Server=ENV-68274LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1"
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     text: If you want you can search another report
+  #     buttons:
+  #       - title: New Report
+  #         value: NEWREPORT
+
+newReport: 
+  - text: OK, Which report are you interested in?
+
+  # - text: This is just a regular Hello World, I don't do anything ;)
+  #   typing: 2s
+  # - text: Make sure to check out the 'index.js' file to see how I work
+  #   typing: true
+  # - wait: 5s
+  # - text: You can say goodbye now.
+  #   typing: 1s
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     images: 
+  #       - url: https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png
+  #     buttons:
+  #       - title: I don't have access at all
+  #         value: A        
+  #       - title: I get another error
+  #         value: B
+  # - contentType: application/vnd.microsoft.card.hero
+  #   content:
+  #     images: 
+  #       - url: https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png
+  #     buttons:
+  #       - title: I don't have access at all
+  #         value: A        
+  #       - title: I get another error
+  #         value: B
+
+goodbye:
+  - text: Thankyou.
+    typing: true
+  - text: Hope to see you back again soon! # if no other properties, you can just send a strings

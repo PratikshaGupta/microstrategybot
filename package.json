@@ -1,0 +1,20 @@
+{
+  "name": "skype",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "botpress": "1.x",
+    "botpress-api.ai": "^2.1.1",
+    "botpress-botframework": "^1.0.1",
+    "botpress-web": "1.x",
+    "q": "^1.5.0"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Botpress Proprietary License"
+}
