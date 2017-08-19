@@ -12,13 +12,13 @@ Add MicroStrategy Bot to your skype
 Query and Response examples
 --------
 
-I.	Query: Hi/Hello
-	Response 1: (any one)
-	-	Hey {{name}}! Welcome to MicroStrategy Bot.
-	-	Hello {{name}}! welcome to MicroStrategy Bot.
-	-	Greetings!! welcome to MicroStrategy Bot.
-	Response 2: I can help you in getting insights, discovering data and finding reports for you. Ex- Can you tell me the minimum cost per region?
-	Response 3: Let me know, which insight are you interested in?
+Query: Hi/Hello
+Response 1: (any one)
+	Hey {{name}}! Welcome to MicroStrategy Bot.
+	Hello {{name}}! welcome to MicroStrategy Bot.
+	Greetings!! welcome to MicroStrategy Bot.
+Response 2: I can help you in getting insights, discovering data and finding reports for you. Ex- Can you tell me the minimum cost per region?
+Response 3: Let me know, which insight are you interested in?
 
 II.	Query: Can you tell me minimum revenue per region?
 	Response 1: (any one)
